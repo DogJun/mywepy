@@ -1,5 +1,4 @@
 <style lang="less">
-@import './styles/weui/weui.less';
 .container {
   height: 100%;
   display: flex;
@@ -23,7 +22,7 @@ setStore(store)
 export default class extends wepy.app {
   config = {
     pages: [
-      'pages/index'
+      'pages/test'
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -43,6 +42,15 @@ export default class extends wepy.app {
   }
 
   onLaunch() {
+    // wepy.login({
+    //   success: function(res) {
+    //     if (res.code) {
+    //       console.log(res.code)
+    //     } else {
+    //       console.log('登录失败！' + res.errMsg)
+    //     }
+    //   }
+    // })
     this.testAsync()
   }
 

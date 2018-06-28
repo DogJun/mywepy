@@ -16,7 +16,6 @@ module.exports = {
   settings: {
     'html/html-extensions': ['.html', '.wpy']
   },
-  globals: { wx: true }, // 设置wx为全局变量，防止eslint报错
   // add your custom rules here
   'rules': {
     // allow paren-less arrow functions

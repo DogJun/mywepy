@@ -8,8 +8,8 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"appid": "touristappid",
-	"projectname": "mywepy",
+	"appid": "",
+	"projectname": "gys-weixin-app",
 	"miniprogramRoot": "./dist",
 	"condition": {}
 }

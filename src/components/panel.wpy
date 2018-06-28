@@ -8,6 +8,7 @@
     padding-left: 50rpx;
     padding-bottom: 20rpx;
     border: 1px solid #ccc;
+    box-sizing: border-box;
 
     .title {
       padding-bottom: 20rpx;

@@ -1,3 +1,4 @@
+process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 const path = require('path');
 var prod = process.env.NODE_ENV === 'production';
 
@@ -37,16 +38,18 @@ module.exports = {
         'transform-decorators-legacy',
         'transform-object-rest-spread',
         'transform-export-extensions',
+        ['global-define', {
+          'process.env.NODE_ENV': process.env.NODE_ENV,
+          'process.env.SERVER_ENV': process.env.SERVER_ENV,
+        }]
       ]
     }
   },
   plugins: {
-    'px2units': {
-      filter: /\.wxss$/
-    }
   },
   appConfig: {
     noPromiseAPI: ['createSelectorQuery']
+    // baseUrl: prod ? 'https://gys.b2btst3.com' : 'https://gys.mycaigou.com'
   }
 }
 

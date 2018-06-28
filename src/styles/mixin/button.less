@@ -1,0 +1,17 @@
+.make-button(@type, @color, @textColor: #fff, @hoverColor: darken(@color, 10%), @disableColor: lighten(@color, 20%)) {
+  .@{prefix}-btn {
+    &[type="@{type}"] {
+      color: @textColor;
+      background-color: @color;
+      &.button-hover {
+        color: fade(@textColor, 60%);
+        background-color: @hoverColor
+      }
+      &[disabled] {
+        color: @textColor;
+        background-color: @disableColor;
+      }
+    }
+  }
+}
+
